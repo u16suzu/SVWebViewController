@@ -42,6 +42,8 @@
                                                                                     target:self.webViewController
                                                                                     action:@selector(doneButtonTapped:)];
         
+        doneButton.tintColor = [UIColor whiteColor];                
+        
         if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
             self.webViewController.navigationItem.leftBarButtonItem = doneButton;
         else
